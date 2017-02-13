@@ -52,6 +52,8 @@
      <Compile Include="Assets\Scripts\Controllers\UserInterfaceController.cs" />
      <Compile Include="Assets\Scripts\LoadSeceneOnClick.cs" />
      <Compile Include="Assets\Scripts\QuitOnClick.cs" />
+     <Compile Include="Assets\Scripts\SocialFeed.cs" />
+     <Compile Include="Assets\Scripts\TimetableRedirect.cs" />
      <Compile Include="Assets\Scripts\VModels\BuildingVModelController.cs" />
      <Compile Include="Assets\Scripts\VModels\CameraManagerVModel.cs" />
      <Compile Include="Assets\Scripts\VModels\RoomManagerVModel.cs" />
