@@ -63,6 +63,7 @@ public class RoomManagerController : MonoBehaviour {
 				//found the room!, so now display it on screen
 				//pobabaly trigger IEnumerable event to display animation etc.
 				vModel.currentDisplayedRoom = room;
+				room.TriggerSelect();
 				StartCoroutine (DisplayRoom ());
 
 			} else {

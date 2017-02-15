@@ -1,10 +1,14 @@
 fileFormatVersion: 2
 guid: 8d74b4251a914fc47b5111ce6bca35eb
-timeCreated: 1485529935
-licenseType: Pro
+timeCreated: 1486989925
+licenseType: Free
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - roomTransform: {instanceID: 0}
+  - roomMesh: {instanceID: 0}
+  - selectedMat: {fileID: 2100000, guid: ab6e5d076cba475468fc865b51be172e, type: 2}
+  - unselectedMat: {fileID: 2100000, guid: 24da2412305eb4047b753748a7be354e, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
