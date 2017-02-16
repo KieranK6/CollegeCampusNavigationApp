@@ -24,11 +24,11 @@ public class RoomVModel : MonoBehaviour {
 
 	void Start(){
 		RoomManagerController.instance.AddRoom (this);
-		CreateRoom();
+		//CreateRoom();
 	}
 
 	void Update(){
-		TempUpdatePositions();
+		//TempUpdatePositions();
 	}
 
 	void CreateRoom(){

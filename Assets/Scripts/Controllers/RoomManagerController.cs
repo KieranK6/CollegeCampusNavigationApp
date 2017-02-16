@@ -65,7 +65,7 @@ public class RoomManagerController : MonoBehaviour {
 				//pobabaly trigger IEnumerable event to display animation etc.
 				vModel.currentDisplayedRoom = room;
 				currentRoom = room;
-				room.TriggerSelect();
+				//room.TriggerSelect();
 				StartCoroutine (DisplayRoom ());
 
 			} else {
@@ -111,7 +111,7 @@ public class RoomManagerController : MonoBehaviour {
 	public void RestoreDefaults(){
 		if (vModel.roomPointer != null) {
 			Destroy (vModel.roomPointer.gameObject);
-			currentRoom.TriggerUnselect();
+			//currentRoom.TriggerUnselect();
 		}
 		UserInterfaceController.instance.vModel.notificationBarTxt.text = "";
 		UserInterfaceController.instance.vModel.searchField.text = "";

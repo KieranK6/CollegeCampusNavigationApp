@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{2BC7391D-B5BA-A566-83B5-02B1FF1B6EF7}</ProjectGuid>
+    <ProjectGuid>{E3D3ADB6-DC6A-4728-4300-FD7665FE7A29}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -46,7 +46,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Demo.cs" />
      <Compile Include="Assets\Scripts\BobUpAndDown.cs" />
+     <Compile Include="Assets\Scripts\ButtonScript.cs" />
      <Compile Include="Assets\Scripts\CameraSliderZoom.cs" />
      <Compile Include="Assets\Scripts\Controllers\CameraManagerController.cs" />
      <Compile Include="Assets\Scripts\Controllers\FloorVModelController.cs" />
@@ -63,6 +65,7 @@
      <Compile Include="Assets\Scripts\VModels\RoomManagerVModel.cs" />
      <Compile Include="Assets\Scripts\VModels\RoomVModel.cs" />
      <Compile Include="Assets\Scripts\VModels\UserInterfaceVModel.cs" />
+     <Compile Include="Assets\Twitter.cs" />
      <Compile Include="Assets\iTween\iTween.cs" />
      <None Include="Assets\README.txt" />
  <Reference Include="UnityEngine.UI">

@@ -7,11 +7,11 @@ public class CameraManagerController : MonoBehaviour {
 	public static CameraManagerController instance;
 
 	public void MoveToCameraPosition(int index, Transform roomTransform){
-		if (index == 0) {
-			UserInterfaceController.instance.vModel.backButton.SetActive (false);
-		} else {
-			UserInterfaceController.instance.vModel.backButton.SetActive (true);
-		}
+		//if (index == 0) {
+	//		UserInterfaceController.instance.vModel.backButton.SetActive (false);
+	//	} else {
+	//		UserInterfaceController.instance.vModel.backButton.SetActive (true);
+	//	}
 
 		//vModel.sceneCamera.transform.LookAt(roomTransform);
 
@@ -27,11 +27,11 @@ public class CameraManagerController : MonoBehaviour {
 	}
 
 	public void MoveToCameraPosition(int index){
-		if (index == 0) {
-			UserInterfaceController.instance.vModel.backButton.SetActive (false);
-		} else {
-			UserInterfaceController.instance.vModel.backButton.SetActive (true);
-		}
+	//	if (index == 0) {
+	//		UserInterfaceController.instance.vModel.backButton.SetActive (false);
+	//	} else {
+	//		UserInterfaceController.instance.vModel.backButton.SetActive (true);
+	//	}
 		iTween.MoveTo (vModel.sceneCamera.gameObject, vModel.cameraPositions [index].position, 2);
 		iTween.RotateTo (vModel.sceneCamera.gameObject, vModel.cameraPositions [index].rotation.eulerAngles, 1);
 
