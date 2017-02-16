@@ -6,6 +6,7 @@ public class RoomManagerController : MonoBehaviour {
 
 	public static RoomManagerController instance;
 	public RoomManagerVModel vModel;
+	private RoomVModel currentRoom;
 
 
 
@@ -63,6 +64,7 @@ public class RoomManagerController : MonoBehaviour {
 				//found the room!, so now display it on screen
 				//pobabaly trigger IEnumerable event to display animation etc.
 				vModel.currentDisplayedRoom = room;
+				currentRoom = room;
 				room.TriggerSelect();
 				StartCoroutine (DisplayRoom ());
 
@@ -79,7 +81,8 @@ public class RoomManagerController : MonoBehaviour {
 
 		UserInterfaceController.instance.vModel.notificationBarTxt.text = "Located in " + RoomManagerController.instance.vModel.buildingDatabase[vModel.currentDisplayedRoom.buildingCode].longName;
 		//move to the camera dock for that building.
-		CameraManagerController.instance.MoveToCameraPosition ((int)vModel.currentDisplayedRoom.buildingCode);
+		//CameraManagerController.instance.MoveToCameraPosition ((int)vModel.currentDisplayedRoom.buildingCode);
+		CameraManagerController.instance.MoveToCameraPosition ((int)vModel.currentDisplayedRoom.buildingCode, vModel.currentDisplayedRoom.roomTransform);
 
 		yield return new WaitForSeconds (1);
 
@@ -108,6 +111,7 @@ public class RoomManagerController : MonoBehaviour {
 	public void RestoreDefaults(){
 		if (vModel.roomPointer != null) {
 			Destroy (vModel.roomPointer.gameObject);
+			currentRoom.TriggerUnselect();
 		}
 		UserInterfaceController.instance.vModel.notificationBarTxt.text = "";
 		UserInterfaceController.instance.vModel.searchField.text = "";

@@ -25,7 +25,7 @@ public class RoomManagerVModel : MonoBehaviour {
 
 public enum BuildingCodes{
 	PJ = 1,
-	EN = 2,
+	NC = 2,
 	BS = 3,
 	test = 4
 }

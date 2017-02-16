@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 
 Project("{30C4E8D0-17FD-EE26-BEDB-8022BD1F728D}") = "MapTestApp", "Assembly-CSharp.csproj", "{2BC7391D-B5BA-A566-83B5-02B1FF1B6EF7}"
 EndProject
+Project("{30C4E8D0-17FD-EE26-BEDB-8022BD1F728D}") = "MapTestApp", "Assembly-CSharp-Editor.csproj", "{964F6955-8A5C-7D52-8C07-03E06F348683}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{2BC7391D-B5BA-A566-83B5-02B1FF1B6EF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2BC7391D-B5BA-A566-83B5-02B1FF1B6EF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2BC7391D-B5BA-A566-83B5-02B1FF1B6EF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{964F6955-8A5C-7D52-8C07-03E06F348683}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{964F6955-8A5C-7D52-8C07-03E06F348683}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{964F6955-8A5C-7D52-8C07-03E06F348683}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{964F6955-8A5C-7D52-8C07-03E06F348683}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
